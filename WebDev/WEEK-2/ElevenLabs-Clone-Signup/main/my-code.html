@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>my-code</title>
+    </head>
+    <style>
+        /* ToDo-3: ADD THIS CSS BLOCK TO PREPARE THE BODY TAG TO COVER THE WHOLE VISIBLE SCREEN */
+        /* 1. Ensure the browser allows the body to fill the full screen height */
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+/* ToDo-4: ADD THIS  */
+/* 2. The container becomes a flexbox that is at least as tall as the screen */
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* 100% of the Viewport Height */
+    }
+/* ToDo-5: TO ALWAYS PLACE THE FOOTER AT THE BOTTOM OF SCREEN VARIABLE SIZE */
+/* 3. This pushes the footer down by growing to fill all available space */
+    .content-wrap {
+        flex: 1; 
+    }
+
+/* 4. The Footer styling */
+    .zoom-style-footer {
+        background-color: #39394d;
+        color: white;
+        padding: 25px 0;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    </style>
+
+
+
+<body>
+  <div class="page-container">
+    <div class="content-wrap", style="padding: 80px; padding-bottom:80px; padding-bottom: 80px;">
+ <center>
+    <div style="font-family: Inter, sans-serif">|| ElevenLabs</div>
+<!-- FEAT 22222222222222  -->
+    <div>
+        <div>Create an account</div>
+        <border>
+        <button>Sign up with Google</button>
+        </border>
+    </div>
+
+    <hr>
+
+
+<!-- FEAT 3333333333333333 -->
+    <form>
+        <div>
+            <label>Email</label><br>
+            <input type="text">
+        </div>
+        <div>
+            <label>Password</label><br>
+            <input type="text">
+        </div>
+        <br>
+        <button style="border-radius: 5px">Sign up</button>
+    </form>
+
+    <div>Already registered? <a href="https://elevenlabs.io/app/sign-in">Sign in</a></div>
+
+</center>
+</div>
+
+    <!-- ToDo-2: ADD THIS <FOOTER /> TAG & MODIFY -->
+    <footer class="zoom-style-footer">
+        <p>By continuing, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy.</a></p>
+    </footer>
+        
+    
+</div>
+</body>
+</html>
